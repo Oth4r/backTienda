@@ -11,9 +11,6 @@ jobs:
   code_build:
     name: Code build
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: './back'
     strategy:
       matrix:
         node-version: [14.x]
@@ -65,7 +62,6 @@ jobs:
         cache: 'npm'
     - name: Code analysis
       run: echo "Static code analysis"
-      working-directory: ./backTienda
       
   generate_artifact:
     name: Generate artifact
