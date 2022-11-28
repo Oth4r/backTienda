@@ -17,4 +17,4 @@ spec:
           service: 
             name: backtienda
             port:
-              number: 4201
+              number: 80

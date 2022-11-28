@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var mongoose = require('mongoose');
-var port = process.env.PORT || 4201;
+var port = process.env.PORT || 80;
 
 var server = require('http').createServer(app);
 var io = require('socket.io')(server,{
