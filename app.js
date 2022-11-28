@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var mongoose = require('mongoose');
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 
 var server = require('http').createServer(app);
 var io = require('socket.io')(server,{
@@ -23,10 +23,10 @@ io.on('connection', function(socket){
     });
 });
 
+var config_route = require('./routes/config');
 var admin_route = require('./routes/admin');
 var cliente_route = require('./routes/cliente');
 var producto_route = require('./routes/producto');
-var config_route = require('./routes/config');
 var cupon_route = require('./routes/cupon');
 var carrito_route = require('./routes/carrito');
 
