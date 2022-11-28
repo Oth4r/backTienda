@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: backTienda.20.72.99.142.nip.io
+  - host: backtienda.20.121.76.163.nip.io
     http:
       paths:
       - path: /
