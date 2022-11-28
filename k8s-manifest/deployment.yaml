@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backTienda
+  name: backtienda
 spec:
   selector:
     matchLabels:
-      name: backTienda
+      name: backtienda
   template:
     metadata:
       labels:
-        name: backTienda
+        name: backtienda
     spec:
       containers:
-        - image: Oth4r/backTienda
-          name: backTienda
+        - image: oth4r/backtienda
+          name: backtienda
           imagePullPolicy: Always
           ports:
             - containerPort: 80
