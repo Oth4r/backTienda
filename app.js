@@ -30,7 +30,7 @@ var producto_route = require('./routes/producto');
 var cupon_route = require('./routes/cupon');
 var carrito_route = require('./routes/carrito');
 
-mongoose.connect('mongodb+srv://doadmin:05JjR92syYl647W8@db-mongodb-nyc1-07334-02b72b83.mongo.ondigitalocean.com/admin', {useUnifiedTopology: true, useNewUrlParser: true},(err, res)=>{
+mongoose.connect('mongodb+srv://tienda:tienda@cluster0.wzk9xt5.mongodb.net/tienda', {useUnifiedTopology: true, useNewUrlParser: true},(err, res)=>{
     if (err) {
         console.log(err);
     }else{
